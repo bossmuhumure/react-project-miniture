@@ -1,0 +1,55 @@
+
+
+.miniture{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+ padding: 13px;
+ font-size: 17px;
+ font-weight: 500;
+ 
+
+}
+
+.Icons-1{
+    font-size: 20px;
+       padding: 7px;
+}
+.icon-1{
+    display: flex;
+    margin-top: 30px;
+ 
+}
+
+.navcontainer{
+    margin-top: 30px;
+    gap: 20px;
+}
+.hd1{
+    transform: translateY(-5px);
+    font-style: poppins;
+}
+.blogs:hover{
+color: orange;
+}
+.span-1{
+    height: -2rem;
+    width: -2rem;
+    flex-direction: row;
+}
+.l-1{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+
+}

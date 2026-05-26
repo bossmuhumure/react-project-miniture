@@ -1,4 +1,5 @@
 import "../styles/Home.css";
+import "../styles/footer.css";
 import { LuBedSingle } from "react-icons/lu";
 
 import react1 from "../src/assets/react1.webp";
@@ -27,6 +28,19 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { LiaInboxSolid } from "react-icons/lia";
 import { PiSpinnerBallLight } from "react-icons/pi";
 import { MdOutlinePayment } from "react-icons/md";
+import react23 from "../src/assets/react23.webp";
+import react24 from "../src/assets/react24.webp";
+import react25 from "../src/assets/react25.webp";
+import react26 from "../src/assets/react26.webp";
+import react27 from "../src/assets/react27.webp";
+import react28 from "../src/assets/react28.webp";
+import { FaInstagram } from "react-icons/fa";
+import { BiLogoFacebook } from "react-icons/bi";
+import { RiTwitterXFill } from "react-icons/ri";
+import { IoLogoYoutube } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa6";
+
+
 function Home() {
 
     const flex = [
@@ -172,6 +186,38 @@ function Home() {
             p:"CRATE EXCLUSIVE",
             image:react22
         }
+    ];
+    const ragepra =[
+      {
+       id:1,
+       icon:<FaInstagram />,
+       image:react23
+      },
+    {
+      id:2,
+      icon:<FaInstagram />,
+       image:react24  
+    },
+      {
+      id:3,
+      icon:<FaInstagram />,
+       image:react25 
+    },
+      {
+      id:4,
+      icon:<FaInstagram />,
+       image:react26 
+    },
+      {
+      id:5,
+      icon:<FaInstagram />,
+       image:react27
+    },
+      {
+      id:6,
+      icon:<FaInstagram />,
+       image:react28 
+    }
     ];
 
     return (
@@ -346,27 +392,87 @@ function Home() {
            ))}
            </div>
           <div className="box-0">
-            <span className="box-1">
-             
-             <h4>  <LiaShippingFastSolid /> Free Shipping   <br /> <p>Free Shipping for orders</p>
+        
+              <h4> 
+            <span className="box-1"> <LiaShippingFastSolid /></span>Free Shipping <br /> <p className="p1-1">Free Shipping for orders</p>
              </h4>
-               </span>
-          <span className="box-1">
             <h4>
-            <LiaInboxSolid />
+                <span className="box-1"><LiaInboxSolid /></span> Money Guarantee <br /><p className="p1-1">Within 30 days</p>
             </h4>
-         
-          </span>
-          <span className="box-1">
-            <PiSpinnerBallLight />
-          </span>
-          <span className="box-1">
-           <MdOutlinePayment />
-          </span>
-          
+         <h4>
+            <span className="box-1"> <PiSpinnerBallLight /></span> Online Support <br /><p className="p1-1">24 hours a day, 7 days a week</p>
+         </h4>   
+        <h4>
+         <span className="box-1"> <MdOutlinePayment /></span>Flexible Payment <br /> <p className="p1-1">Pay with Multiple Credit Cards</p>
+     </h4>
+          </div>
+          <section className="ragepra">
+            <div className="claire-1">
+         <h1 className="claire-2">Instagram Shop</h1>
+          <p className="claire-3">Tag @miniture in your Instagram photos for <br />
+             a chance to be featured here.</p>
+            <button className="claire-4">Visit Our Instagram</button>
+            </div>
+            <div className="ragepra-0">
+        {ragepra.map((item) => (
+           <div key={item.id} className="ragepra-1">
+            <img src={item.image} className="ragepra-2" alt=""/>
+            <div className="ragepraa-1">{item.icon}</div>
+           </div>
+        )
+        )}
+            </div>
+          </section>
+          <section className="formal">
+            <div className="formal-1">
+                 <div>
+            <h1 className="part-1">Our story</h1>
+            <p className="part1-2">Miniture is one of the biggest international <br /> fashion companies, one of the world’s <br />
+             largest distribution groups.</p>
+             <div className="part1-3">
+               <div className="part1-4"><BiLogoFacebook /></div> 
+             <div  className="part1-4"> <RiTwitterXFill /></div> 
+               <div className="part1-4"><FaInstagram /></div>
+              <div className="part1-4"> <IoLogoYoutube /></div>
+             </div>
+          </div>
+          <div>
+            <h1>Quick links</h1>
+            <p className="part1-2">
+               <p className="part1-22" >Accent Chairs <br /></p> 
+              <p className="part1-22">Dinning Chair <br /></p>  
+             <p className="part1-22">Dining Room <br /></p>
+               <p className="part1-22"> Kid's Furniture </p>
+            </p>
+          </div>
+          <div>
+            <h1>
+                Information
+            </h1>
+            <p className="part1-2">
+              <p className="part1-22">Privacy policy <br /></p>  
+               <p className="part1-22"> Refund policy <br /></p>
+               <p className="part1-22">Shipping & Return <br /></p> 
+               <p className="part1-22">  Term & conditions</p>
+            </p>
+          </div>
+          <div>
+            <h1>Let’s get in touch</h1>
+        <input className="text" placeholder="Enter Your Email" /><FaArrowRight className="part1-5"/>
           </div>
         </div>
+         <div className="end">
+            <div className="happy"> <p >© 2026 Miniture. <p className="clash-5">Powered by Shopify</p> </p></div>
+         
+          <div className="clash">      <button className="clash-1">English <BiSolidChevronDown /></button>
+            <button className="clash-2">Rwanda (USD $)<BiSolidChevronDown /></button></div>
+          </div>
+          </section>
+           
+        </div>
+     
     );
 }
+
 
 export default Home;

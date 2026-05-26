@@ -563,5 +563,157 @@ font-size: 17px;
     padding-top: 3rem;
 }
 .box-1{
-    font-size:50px;
+    font-size:20px;
+    padding: 20px 15px;
+  height: 47px;
+  width: 49px;
+  border-radius: 50%;
+   border:1px solid rgb(188, 186, 180);
+   margin-right: 20px;
+
+}
+.p1-1{
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2px;
+    margin-left: 65px;
+}
+/* MAIN CONTAINER */
+.ragepra{
+  grid-column: 2;
+  display: flex;
+  padding-top: 2rem;
+}
+
+/* GALLERY */
+.ragepra-0{
+  column-count: 3;
+  column-gap: 20px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* EACH IMAGE CARD */
+.ragepra-1{
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+.ragepra-2{
+  width: 240px;
+  height: 270px;
+  display: block;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.ragepra-1:hover .ragepra-2{
+  transform: scale(1.05);
+}
+
+/* INSTAGRAM ICON */
+.ragepraa-1{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* ICON HOVER */
+.ragepraa-1:hover{
+  background: #ff8800;
+  transform: scale(1.1);
+}
+ 
+.claire-1{
+justify-content: left;
+padding-top: 9rem;
+}
+.claire-2{
+ font-size: 30px;
+ font-weight: bold;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.claire-3{
+    font-size: 16px;
+}
+.claire-4{
+  margin-top: 2rem;
+  border-radius: 20px;
+  height: 43px;
+  background-color: white;
+  color: #000;
+  border-color: rrgb(232, 218, 150);
+  width: 150px;
+}
+.claire-4:hover{
+    background-color: orange;
+    color: white;
+    border: none;
+}
+/* CONTAINER Y'IZO ICON ZOSE */
+.part1-3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BURI ICON */
+.part1-4{
+    width: 56px;
+    height: 34px;
+
+    border-radius: 50%; /* circle */
+    border-color: #ff8800;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    border: 2px solid #9a9793;
+
+    transition: 0.3s ease;
+}
+.text{
+    height: 53px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: #111111;
+    border: none;
+    color: white;
+}
+.part1-5{
+padding: 15px;
+border-radius: 20px;
+    background-color: #ff8800; 
+}
+.part1-4:hover{
+    color: orange;
+}
+.formal{
+    background-color: black;
+    color: white;
+}
+.clash-5:hover{
+color: orange;
 }

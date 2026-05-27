@@ -6,6 +6,7 @@
  display: flex;
  margin-left: 10px;
 
+
 }
 .part-1{
 
@@ -70,4 +71,8 @@
 }
 .happy{
 padding-top: 3rem;
+}
+.touch{
+    border-bottom: 1px solid rgb(82, 77, 77);
+    margin-top: 12rem;
 }

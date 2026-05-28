@@ -437,26 +437,28 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     transform:scale(1.05);
 }
 
-/* text hejuru */
 
 .iranzi-1::before{
     content:"CRAFT OWN FURNITURE";
     position:absolute;
-    top:20px;
+    top:2px;
     right:40px;
     color:#777;
     font-size:18px;
     letter-spacing:3px;
     z-index:2;
+    
+    background:#fff;
 }
 
-/* white box */
 
 .iranzi-1::after{
     content:"Your new forever favorites are here";
     position:absolute;
     top:60px;
-    right:0;
+    right:0px;
+   border-radius: 20px;
+     
 
     background:#fff;
     color:#000;
@@ -634,6 +636,14 @@ font-size: 17px;
   font-size: 22px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.ragepraa-1::after{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    color: orange;
+    padding: ;
 }
 
 /* ICON HOVER */

@@ -1,5 +1,5 @@
 .formal-1{
-    padding-top: 3rem;
+    
     background-color: black;
     color: white;
  justify-content: space-between;
@@ -32,7 +32,10 @@
     color: orange;
 }
 .end{
-   margin-top: 10rem;
+   margin-top: 6rem;
+   display: flex;
+   justify-content: space-between;
+     margin-top: 2rem;
 }
 
 .clash{
@@ -70,9 +73,9 @@
   margin-bottom: 2rem;
 }
 .happy{
-padding-top: 3rem;
+padding-top: 1px;
 }
 .touch{
     border-bottom: 1px solid rgb(82, 77, 77);
-    margin-top: 12rem;
+
 }

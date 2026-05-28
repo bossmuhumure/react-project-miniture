@@ -46,7 +46,7 @@ return(
         </div>
         <div className="touch"></div>
          <div className="end">
-            <div className="happy"> <p >© 2026 Miniture.&nbsp Powered by Shopify</p></div>
+            <div className="happy">© 2026 Miniture. Powered by Shopify</div>
          
           <div className="clash">      <button className="clash-1">English <BiSolidChevronDown /></button>
             <button className="clash-2">Rwanda (USD $)<BiSolidChevronDown /></button></div>

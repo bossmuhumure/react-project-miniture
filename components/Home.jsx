@@ -143,6 +143,7 @@ function Home() {
         {
             id: 1,
             title: "Your new forever favorites are here",
+            p:"CRAFT OWN FURNITURE",
             image: react16
         }
     ];
@@ -355,7 +356,8 @@ function Home() {
                 {iranzi.map((item) => (
                     <div key={item.id} className="iranzi-1">
                         <div className="iranzi-2">
-                            <img src={item.image} className="iranzi-3" alt={item.title} />
+                            <img src={item.image} className="iranzi-3" alt={item.title}  />
+                            {item.p}
                         </div>
                     </div>
                 )

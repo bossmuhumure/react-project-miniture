@@ -57,6 +57,7 @@ nav a{
 .navcontainer{
     margin-top: 30px;
     gap: 20px;
+    background-color: white;
     color: blue;
 }
 .hd1{

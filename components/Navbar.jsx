@@ -8,6 +8,8 @@ import react30 from "../src/assets/react30.webp";
 import react31 from "../src/assets/react31.webp";
 import react32 from "../src/assets/react32.webp";
 import react33 from "../src/assets/react33.webp";
+import { TbXboxX } from "react-icons/tb";
+import { FaArrowRight } from "react-icons/fa6";
 function Navbar() {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -46,7 +48,24 @@ function Navbar() {
       Image: react33
     }
   ];
-
+     const [initialPages,SetInitialPages]=useState(false);
+     const pages=[
+      {
+        id:1,title:"About Us"
+      },
+         {
+        id:2,title:"FAQs"
+      },
+         {
+        id:3,title:"Contact Us"
+      }
+     ]; const [initialBag,SetInitialBag]=useState(false);
+       const bag=[
+        {
+          id:1,
+          title:""
+        }
+       ]
 
   return (
     <div className="miniture">
@@ -73,8 +92,6 @@ function Navbar() {
               className="dropdown-menu"
 
             >
-              <div className="luu">
-
                 {HomeLink.map((item) => (
                   <Link
                     to={`/home-v${item.id}`}
@@ -84,7 +101,7 @@ function Navbar() {
                     {item.title}
                   </Link>
                 ))}
-              </div>
+              
             </div>
           )}
         </div>
@@ -96,12 +113,14 @@ function Navbar() {
             Catalogue<span><BiSolidChevronDown /></span>
           </Link>
           {isCatalogue && (
+                  
                    <section className="catalogue-link">
+                      
                   <div className="catalogue-menu">
-                    <h1 >Collections</h1>
-              <h1>Dining Chair</h1>
-              <h1>  Dining Room</h1>
-              <h1>Kid's Furniture</h1>
+                    <h1 className="hello-class">Accent Chairs</h1>
+              <h1 className="hello-class-1">Dining Chair</h1>
+              <h1 className="hello-class-1">  Dining Room</h1>
+              <h1 className="hello-class-1">Kid's Furniture</h1>
                     </div>  
               <div className="wwww">
                 {Catalogue.map((item) => (
@@ -119,15 +138,34 @@ function Navbar() {
                 )}
               </div>
                    </section>
-            
-            
-          )
-
-          }
-
+          ) }
         </div>
+        <div className="pages-condition"
+        onMouseEnter={()=> SetInitialPages (true)}
+         onMouseLeave={()=> SetInitialPages (false)}
+        >
+           <Link 
+            to="Pages">
+              Pages<span><BiSolidChevronDown /></span>
+              </Link>
+        {initialPages && (
+          <div className="pages-container">
+         {pages.map((item) => (
+          < Link
+           to={`pages-v${item.id}`}
+           key={item.id}
+           className="pages-pages"
+           >
+            <p>  {item.title}</p>
+          
+           </Link>
+         )
+        )}
+          </div>
 
-        <Link to="Pages">Pages<span><BiSolidChevronDown /></span></Link>
+        )}
+        </div>
+       
         <Link to="blogs">blogs</Link>
         <Link to="contact">contact</Link>
       </nav>
@@ -135,7 +173,42 @@ function Navbar() {
       <div className="icon-1">
         <div><IoSearchSharp className="Icons-1" /></div>
         <div><IoPersonOutline className="Icons-1" /></div>
-        <div><LiaShoppingBagSolid className="Icons-1" /></div>
+        <div className="icon-icon"
+        onMouseEnter={()=> SetInitialBag (true)}
+         onMouseLeave={()=> SetInitialBag (false)}
+         
+        >
+        <div>
+          <LiaShoppingBagSolid 
+          className="Icons-12" />
+          </div>
+          {initialBag && (
+            <div className="icon-what">
+              {bag.map ((item) =>(
+               <div
+                 to={`pages-v${item.id}`}
+           key={item.id}
+           className="icons-map"
+           > <div className="flex-droo">
+               <h3 className="flex-droop2">Shopping Cart<TbXboxX className="tb-1"/></h3>
+           </div>
+           <div className="why">
+            <h1 className="vvvv">{item.title}</h1>
+             <h1 className="boss">Your cart is currently <br /> empty</h1>
+             <p className="v1v1">Not sure where to start? <br />
+                Try these collections:</p>
+                <button className="button-button"> continue Shopping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><FaArrowRight /></span> </button>
+           </div>
+            
+           </div>
+              )
+            )}
+
+            </div>
+
+          )
+          }
+        </div>
       </div>
     </div>
   );

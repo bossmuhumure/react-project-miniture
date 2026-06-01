@@ -19,17 +19,33 @@ function Navbar() {
     { id: 5, title: "Home v5 — Vintage Revival" },
     { id: 6, title: "Home v6 — Kid’s Playland " },
   ];
-  const [isCatalogue,ShowIsCatalogue]=useState(false);
-  const Catalogue=[
+  const [isCatalogue, ShowIsCatalogue] = useState(false);
+  const Catalogue = [
     {
-        id:1,
-        title:"Ana Grey Dining Chair",
-        pricing:"$299.99",
-        Image:react30
-
+      id: 1,
+      title: "Ana Grey Dining Chair",
+      pricing: "$299.99",
+      Image: react30
+    },
+    {
+      id: 2,
+      title: "Axis 2-Piece Sectional Sofa",
+      pricing: "$339.99",
+      Image: react31
+    },
+    {
+      id: 3,
+      title: "Axis 2-Seat Sofa",
+      pricing: "$239.99",
+      Image: react32
+    },
+    {
+      id: 4,
+      title: "Curved Back Dining Chair",
+      pricing: "$129.99",
+      Image: react33
     }
-
-  ]
+  ];
 
 
   return (
@@ -44,7 +60,7 @@ function Navbar() {
           className="homelink-page"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-         
+
         >
           <Link to="/">
             <span>Home</span>
@@ -55,24 +71,62 @@ function Navbar() {
           {isHovered && (
             <div
               className="dropdown-menu"
-       
-            >
-                <div className="luu">
 
-              {HomeLink.map((item) => (
-                <Link
-  to={`/home-v${item.id}`}
-  key={item.id}
-  className="dropdown-link"
-                >
-                  {item.title }
-                </Link>
-              ))}
-                </div>
+            >
+              <div className="luu">
+
+                {HomeLink.map((item) => (
+                  <Link
+                    to={`/home-v${item.id}`}
+                    key={item.id}
+                    className="dropdown-link"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
         </div>
-        <Link to="Catalogue">Catalogue<span><BiSolidChevronDown /></span></Link>
+        <div className="cataloge-page"
+          onMouseEnter={() => ShowIsCatalogue(true)}
+          onMouseLeave={() => ShowIsCatalogue(false)}
+        >
+          <Link to="Catalogue">
+            Catalogue<span><BiSolidChevronDown /></span>
+          </Link>
+          {isCatalogue && (
+                   <section className="catalogue-link">
+                  <div className="catalogue-menu">
+                    <h1 >Collections</h1>
+              <h1>Dining Chair</h1>
+              <h1>  Dining Room</h1>
+              <h1>Kid's Furniture</h1>
+                    </div>  
+              <div className="wwww">
+                {Catalogue.map((item) => (
+                  <Link
+                    to={`Catalogue-v${item.id}`}
+                    key={item.id}
+                    className="catalogue-item"
+                  >
+                    <img src={item.Image} alt={item.title}
+                    />
+                    <h4> {item.title} <br /></h4>
+                    <p>  {item.pricing}</p>
+                  </Link>
+                )
+                )}
+              </div>
+                   </section>
+            
+            
+          )
+
+          }
+
+        </div>
+
         <Link to="Pages">Pages<span><BiSolidChevronDown /></span></Link>
         <Link to="blogs">blogs</Link>
         <Link to="contact">contact</Link>

@@ -81,10 +81,10 @@ function Navbar() {
           onMouseLeave={() => setIsHovered(false)}
 
         >
-          <Link to="/">
+          <a href="/">
             <span>Home</span>
             <BiSolidChevronDown className="span-1" />
-          </Link>
+          </a>
 
           {/* Absolute positioning inline forces the dropdown to float over your existing layout */}
           {isHovered && (
@@ -109,13 +109,12 @@ function Navbar() {
           onMouseEnter={() => ShowIsCatalogue(true)}
           onMouseLeave={() => ShowIsCatalogue(false)}
         >
-          <Link to="Catalogue">
+          <Link to="/Catalogue">
             Catalogue<span><BiSolidChevronDown /></span>
           </Link>
           {isCatalogue && (
                   
                    <section className="catalogue-link">
-                      
                   <div className="catalogue-menu">
                     <h1 className="hello-class">Accent Chairs</h1>
               <h1 className="hello-class-1">Dining Chair</h1>
@@ -166,8 +165,9 @@ function Navbar() {
         )}
         </div>
        
-        <Link to="blogs">blogs</Link>
-        <Link to="contact">contact</Link>
+        <a className="blogs-blogs" href="/blogs">blogs</a>
+
+        <Link className="blogs-blogs" to="/contact">contact</Link>
       </nav>
 
       <div className="icon-1">
@@ -193,7 +193,7 @@ function Navbar() {
                <h3 className="flex-droop2">Shopping Cart<TbXboxX className="tb-1"/></h3>
            </div>
            <div className="why">
-            <h1 className="vvvv">{item.title}</h1>
+               <h1 className="vvvv">{item.title}</h1>
              <h1 className="boss">Your cart is currently <br /> empty</h1>
              <p className="v1v1">Not sure where to start? <br />
                 Try these collections:</p>

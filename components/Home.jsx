@@ -39,10 +39,31 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
-
-
+import react34 from "../src/assets/react34.webp";
+import React, { useState, useEffect } from "react";
 function Home() {
+      const one=[
+        {
+            id:1,
+            image:react1
+        },
+         {
+            id:2,
+            image:react34
+        }
+    ];
+  const  [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) =>
+        prev === one.length - 1 ? 0 : prev + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+      
     const flex = [
         {
             id: 1,
@@ -234,10 +255,12 @@ function Home() {
                 Creations&nbsp;&nbsp;&nbsp;
                 <span className="shop-one">Shop now</span>
             </h1>
-
+                 <div>
+                
+                 </div>
             {/* HERO IMAGE */}
             <div className="reactImage">
-                <img src={react1} className="react1" alt="Furniture" />
+                <img src={one[currentSlide].image} className="react1" alt="Furniture" />
             </div>
 
             {/* GRID IMAGES */}

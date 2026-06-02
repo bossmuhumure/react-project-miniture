@@ -26,12 +26,14 @@
     background-color: white;
     z-index: 1000;
 
-    padding: 15px 50px;
+    padding: 15px ;
 
     font-weight: 500;
     font-size: 18px;
 
     box-sizing: border-box;
+
+    margin-bottom: 100px;
 }
 nav a{
     text-decoration: none;
@@ -41,7 +43,6 @@ nav a{
  font-size: 17px;
  font-weight: 500;
 }
-
 .Icons-1{
     font-size: 20px;
        padding: 7px;
@@ -49,7 +50,12 @@ nav a{
 .icon-1{
     display: flex;
     margin-top: 30px;
- 
+}
+.Icons-1:hover{
+color: orange;
+}
+.blogs-blogs:hover{
+color: orange;
 }
 .Icons-12{
       font-size: 20px;
@@ -88,9 +94,6 @@ color: orange;
     position: relative;
 }
 
-
-
-
 .dropdown-menu{
     position: absolute;
     top: 100%;
@@ -99,6 +102,7 @@ color: orange;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
     z-index: 999;
     display: flex;
+    flex-direction: column;
     border: 1px solid #eaeaea;
     border-radius: 4px;
     width: 300px;
@@ -304,9 +308,6 @@ background-color: white;
 }
 .tb-1:hover{
 color: orange;
-}
-.tb-1{
- 
 }
 .button-button:hover{
 color: orange;

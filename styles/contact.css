@@ -1,0 +1,96 @@
+.contact-where{
+     margin-top: 120px;
+     padding-left: 20px;
+}
+.image-map2{
+    display: flex;
+    height: 30%;
+    width: 93%;
+    padding-left: 20px;
+}
+.flex-map {
+   display: flex;
+  flex-direction: row;
+ gap: 60px;
+  padding-left: 20px;
+  margin-bottom: 80px;
+}
+
+.flex-map2 {
+  display: flex;
+  gap: 40px;
+    
+}
+
+.flex-map2 input {
+  width: 350px;
+  height: 50px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: rgb(225, 218, 218);
+}
+
+.flex-map3 {
+  width: 50%;
+}
+
+.flex-map3 textarea {
+  width: 767px;
+  height: 120px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+    background-color: rgb(225, 218, 218);
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-input{
+
+}
+.p-1{
+    font-weight: 10px;
+}
+.p-2{
+    font-weight: bold;
+}
+.visual{
+    display: flex;
+    gap: 20px;
+}
+.visual-1{
+
+}
+.visual-2{
+ font-size: 30px;
+}
+.visual-2:hover{
+  color: orange;
+}
+.send-what{
+  margin-top: 20px;
+  height: 60px;
+  width: 150px;
+  border: none;
+  border-radius: 29px;
+  font-size: 15px;
+  background-color: orange;
+  color: white;
+}
+.send-what:hover{
+  background-color: black;
+}
+.email-org:hover{
+color: orange;
+}
+.send-on{
+  white-space: nowrap;
+}

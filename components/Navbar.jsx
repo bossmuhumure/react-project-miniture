@@ -48,6 +48,11 @@ function Navbar() {
       Image: react33
     }
   ];
+     const pagelinks=[
+            {id:1, title:"AboutUs", path:"/AboutUs"},
+            {id:2, title:"FAQS", path:"/FAQS"},
+             {id:3, title:"Contactus", path:"/Contactus"}    
+    ];
      const [initialPages,SetInitialPages]=useState(false);
      const pages=[
       {
@@ -149,9 +154,9 @@ function Navbar() {
               </Link>
         {initialPages && (
           <div className="pages-container">
-         {pages.map((item) => (
+         {pagelinks.map((item) => (
           < Link
-           to={`pages-v${item.id}`}
+           to={`pages-v${item.path}`}
            key={item.id}
            className="pages-pages"
            >

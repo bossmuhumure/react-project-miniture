@@ -1,1 +1,88 @@
 
+.blog-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.blog-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.blog-button button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #f3f3f3;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.blog-button button:hover {
+  background: black;
+  color: white;
+}
+
+.blog-grid {
+ display: flex;
+  gap: 30px;
+}
+
+.blog-card {
+  background: white;
+}
+
+.blog-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.blog-image:hover {
+  transform: scale(1.03);
+}
+
+.blog-date {
+  margin-top: 15px;
+  color: #777;
+  font-size: 14px;
+}
+
+.blog-title {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.blog-description {
+  margin-top: 12px;
+  color: #555;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.howAreYou{
+    display: flex;
+}
+.accelerator{
+    margin-top: 20px;
+    width: 109px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border-color: rgb(215, 204, 204)
+}
+.accelerator:hover{
+     color: white;
+    background-color: orange;
+}

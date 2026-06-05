@@ -4,6 +4,10 @@ import Layout from "../components/Layout";
 import Home from "../components/Home";
 import BlgHero from "../components/blgHero";
 import Contact from "../components/Contact";
+import FAQS from "../components/FAQs";
+import Contactus from "../components/Contactus";
+import AboutUs from "../components/AboutUs";
+import Catalogue from "../components/Catalogue";
 
 
 
@@ -18,6 +22,10 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="/blogs" element={<BlgHero />} />
                     <Route path="/contact" element={<Contact/>}/>
+                     <Route path="/FAQS" element={<FAQS/>}/>
+                     <Route path="pages-v/Contactus" element={<Contactus/>}/>
+                      <Route path="pages-v/AboutUs" element={<AboutUs/>}/>
+                       <Route path="/Catalogue" element={<Catalogue/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

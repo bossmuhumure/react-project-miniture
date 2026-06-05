@@ -1,0 +1,70 @@
+.catalogue {
+  gap: 20px;
+  width: 90%;
+  margin: 40px auto;
+}
+.catalogue-1 img {
+  width: 99%;
+  height: 400px;
+   border-radius: 20px;
+}
+
+.catalogue-1:hover img {
+  transform: scale(1.05);
+}
+.catalogue-1{
+      border-radius: 20px;
+  overflow: hidden;
+}
+.catalogue-2{
+   display: flex;
+   justify-content: space-between;
+
+}
+.catalogue-3{
+     width: 120px;
+     height: 40px;
+     margin-bottom: 10px;
+     border-radius: 19px;
+     background-color: black;
+     color: white;
+     border: none;
+}
+.catalogue-3:hover{
+    background-color: orange;
+}
+.catalogue-4{
+     
+      white-space: nowrap;
+     border: none;
+}
+.catalogue-5{
+       width: 240px;
+     height: 50px;
+     border: none;
+     border-radius: 20px;
+     font-size: 14px;
+     background-color: white;
+     color: #5e5959;
+     border: 1px solid #f2eaea;
+}
+.catalogue-6{
+    font-size: 18px;
+}
+.rayon-rayon{
+    display: flex;
+
+}
+.rayon-0{
+    display: flex;
+    
+}
+.rayon-1{
+  
+}
+.furniture{
+    display: flex;
+    width: 450px;
+    height: 300px;
+    justify-content: right;
+}

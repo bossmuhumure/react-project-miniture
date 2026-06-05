@@ -42,28 +42,28 @@ import { FaArrowRight } from "react-icons/fa6";
 import react34 from "../src/assets/react34.webp";
 import React, { useState, useEffect } from "react";
 function Home() {
-      const one=[
+    const one = [
         {
-            id:1,
-            image:react1
+            id: 1,
+            image: react1
         },
-         {
-            id:2,
-            image:react34
+        {
+            id: 2,
+            image: react34
         }
     ];
-  const  [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) =>
-        prev === one.length - 1 ? 0 : prev + 1
-      );
-    }, 3000);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentSlide((prev) =>
+                prev === one.length - 1 ? 0 : prev + 1
+            );
+        }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
-      
+        return () => clearInterval(interval);
+    }, []);
+
     const flex = [
         {
             id: 1,
@@ -164,82 +164,82 @@ function Home() {
         {
             id: 1,
             title: "Your new forever favorites are here",
-            p:"CRAFT OWN FURNITURE",
+            p: "CRAFT OWN FURNITURE",
             image: react16
         }
     ];
-    const ngoga =[
-       {
-        id:1,
-        title:"Lounge Deep Chaise Lounge",
-        price:"$299.99",
-        image:react17
-       },
-       {
-        id:2,
-        title:"Polly Sand Brown Accent Chair",
-        price:"$439.99",
-        image:react18
-       },
-       {
-        id:3,
-       title:"Axis 2-Seat Sofa",
-       price:"$239.99",
-       image:react19
-       },
-       {
-        id:4,
-        title:"Medoc Swivel Chair",
-        price:"$299.99",
-        image:react20
-       }
-    ];
-     const boss =[
+    const ngoga = [
         {
-            id:1,
-            title:"The personalization Shop",
-            p:"EVEN MORE SPECIAL",
-            image:react21
+            id: 1,
+            title: "Lounge Deep Chaise Lounge",
+            price: "$299.99",
+            image: react17
+        },
+        {
+            id: 2,
+            title: "Polly Sand Brown Accent Chair",
+            price: "$439.99",
+            image: react18
+        },
+        {
+            id: 3,
+            title: "Axis 2-Seat Sofa",
+            price: "$239.99",
+            image: react19
+        },
+        {
+            id: 4,
+            title: "Medoc Swivel Chair",
+            price: "$299.99",
+            image: react20
+        }
+    ];
+    const boss = [
+        {
+            id: 1,
+            title: "The personalization Shop",
+            p: "EVEN MORE SPECIAL",
+            image: react21
 
         },
         {
-            id:2,
-            title:"New thyme hue from le creuset",
-            p:"CRATE EXCLUSIVE",
-            image:react22
+            id: 2,
+            title: "New thyme hue from le creuset",
+            p: "CRATE EXCLUSIVE",
+            image: react22
         }
     ];
-    const ragepra =[
-      {
-       id:1,
-       icon:<FaInstagram />,
-       image:react23
-      },
-    {
-      id:2,
-      icon:<FaInstagram />,
-       image:react24  
-    },
-      {
-      id:3,
-      icon:<FaInstagram />,
-       image:react25 
-    },
-      {
-      id:4,
-      icon:<FaInstagram />,
-       image:react26 
-    },
-      {
-      id:5,
-      icon:<FaInstagram />,
-       image:react27
-    },
-      {
-      id:6,
-      icon:<FaInstagram />,
-       image:react28 
-    }
+    const ragepra = [
+        {
+            id: 1,
+            icon: <FaInstagram />,
+            image: react23
+        },
+        {
+            id: 2,
+            icon: <FaInstagram />,
+            image: react24
+        },
+        {
+            id: 3,
+            icon: <FaInstagram />,
+            image: react25
+        },
+        {
+            id: 4,
+            icon: <FaInstagram />,
+            image: react26
+        },
+        {
+            id: 5,
+            icon: <FaInstagram />,
+            image: react27
+        },
+        {
+            id: 6,
+            icon: <FaInstagram />,
+            image: react28
+        }
     ];
 
     return (
@@ -255,9 +255,9 @@ function Home() {
                 Creations&nbsp;&nbsp;&nbsp;
                 <span className="shop-one">Shop now</span>
             </h1>
-                 <div>
-                
-                 </div>
+            <div>
+
+            </div>
             {/* HERO IMAGE */}
             <div className="reactImage">
                 <img src={one[currentSlide].image} className="react1" alt="Furniture" />
@@ -379,7 +379,7 @@ function Home() {
                 {iranzi.map((item) => (
                     <div key={item.id} className="iranzi-1">
                         <div className="iranzi-2">
-                            <img src={item.image} className="iranzi-3" alt={item.title}  />
+                            <img src={item.image} className="iranzi-3" alt={item.title} />
                             {item.p}
                         </div>
                     </div>
@@ -387,69 +387,69 @@ function Home() {
                 )}
             </div>
             <div className="first"><h1>Top Sellers
-                </h1>  </div>
-           <div className="ngoga">
-            {ngoga.map((item) => (
-                 <div key={item.id} className="ngoga-1">
-                    <div className="ngoga-2">
-                     <img src={item.image} className="ngoga-3" alt=""/>
-                           <div className="ngoga-4">{item.title}</div>
+            </h1>  </div>
+            <div className="ngoga">
+                {ngoga.map((item) => (
+                    <div key={item.id} className="ngoga-1">
+                        <div className="ngoga-2">
+                            <img src={item.image} className="ngoga-3" alt="" />
+                            <div className="ngoga-4">{item.title}</div>
                             <div className="ngoga-5">{item.price}</div>
+                        </div>
+
+
                     </div>
 
-
-                 </div>
-
-            ))}
-           </div>
-           <div className="boss-0">
-           {boss.map((item)=>(
-            <div key={item.id} className="boss-1">
-                <div className="boss-2">
-                    <img src={item.image} className="boss-3" alt=""/>
-                     <div className="boss-4">{item.p}</div>
-                     <div className="boss-5">{item.title}</div>
-                </div>
-                
-                
-                </div>
-
-           ))}
-           </div>
-          <div className="box-0">
-        
-              <h4> 
-            <span className="box-1"> <LiaShippingFastSolid /></span>Free Shipping <br /> <p className="p1-1">Free Shipping for orders</p>
-             </h4>
-            <h4>
-                <span className="box-1"><LiaInboxSolid /></span> Money Guarantee <br /><p className="p1-1">Within 30 days</p>
-            </h4>
-         <h4>
-            <span className="box-1"> <PiSpinnerBallLight /></span> Online Support <br /><p className="p1-1">24 hours a day, 7 days a week</p>
-         </h4>   
-        <h4>
-         <span className="box-1"> <MdOutlinePayment /></span>Flexible Payment <br /> <p className="p1-1">Pay with Multiple Credit Cards</p>
-     </h4>
-          </div>
-          <section className="ragepra">
-            <div className="claire-1">
-         <h1 className="claire-2">Instagram Shop</h1>
-          <p className="claire-3">Tag @miniture in your Instagram photos for <br />
-             a chance to be featured here.</p>
-            <button className="claire-4">Visit Our Instagram</button>
+                ))}
             </div>
-            <div className="ragepra-0">
-        {ragepra.map((item) => (
-           <div key={item.id} className="ragepra-1">
-            <img src={item.image} className="ragepra-2" alt=""/>
-            <div className="ragepraa-1">{item.icon}</div>
-           </div>
-        )
-        )}
+            <div className="boss-0">
+                {boss.map((item) => (
+                    <div key={item.id} className="boss-1">
+                        <div className="boss-2">
+                            <img src={item.image} className="boss-3" alt="" />
+                            <div className="boss-4">{item.p}</div>
+                            <div className="boss-5">{item.title}</div>
+                        </div>
+
+
+                    </div>
+
+                ))}
             </div>
-          </section>     
+            <div className="box-0">
+
+                <h4>
+                    <span className="box-1"> <LiaShippingFastSolid /></span>Free Shipping <br /> <p className="p1-1">Free Shipping for orders</p>
+                </h4>
+                <h4>
+                    <span className="box-1"><LiaInboxSolid /></span> Money Guarantee <br /><p className="p1-1">Within 30 days</p>
+                </h4>
+                <h4>
+                    <span className="box-1"> <PiSpinnerBallLight /></span> Online Support <br /><p className="p1-1">24 hours a day, 7 days a week</p>
+                </h4>
+                <h4>
+                    <span className="box-1"> <MdOutlinePayment /></span>Flexible Payment <br /> <p className="p1-1">Pay with Multiple Credit Cards</p>
+                </h4>
+            </div>
+            <section className="ragepra">
+                <div className="claire-1">
+                    <h1 className="claire-2">Instagram Shop</h1>
+                    <p className="claire-3">Tag @miniture in your Instagram photos for <br />
+                        a chance to be featured here.</p>
+                    <button className="claire-4">Visit Our Instagram</button>
+                </div>
+                <div className="ragepra-0">
+                    {ragepra.map((item) => (
+                        <div key={item.id} className="ragepra-1">
+                            <img src={item.image} className="ragepra-2" alt="" />
+                            <div className="ragepraa-1">{item.icon}</div>
+                        </div>
+                    )
+                    )}
+                </div>
+            </section>
         </div>
-     
+
     );
 }
 

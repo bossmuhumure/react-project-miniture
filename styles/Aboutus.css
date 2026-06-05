@@ -1,0 +1,124 @@
+.about-us{
+    margin-top: 120px;
+}
+.claude-3{
+    width: 1450px;
+    height: 550px;
+    border-radius: 20px;
+}
+.all{
+    padding-left: 20px;
+}
+.why-this{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.why-this-1{
+    font-size: 18px;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.why-this-2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.number{
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+}
+.number-1{
+  margin-bottom: 8px;
+}
+.number-2{
+    margin-top: 0px;
+    font-size: 17px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+}
+.visual{
+    display: flex;
+}
+.visual-2{
+    width: 340px;
+    height: 290px;
+    border-radius: 20px;
+}
+.work-1{
+    display: flex;
+    justify-content: space-around;
+}
+.work-2{
+    font-size: 22px;
+    margin-top: 0px;
+}
+.ragepra{
+  grid-column: 2;
+  display: flex;
+  padding-top: 2rem;
+}
+
+/* GALLERY */
+.ragepra-0{
+  column-count: 3;
+  column-gap: 20px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* EACH IMAGE CARD */
+.ragepra-1{
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+.ragepra-2{
+  width: 240px;
+  height: 270px;
+  display: block;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.ragepra-1:hover .ragepra-2{
+  transform: scale(1.05);
+}
+
+/* INSTAGRAM ICON */
+.ragepraa-1{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ragepraa-1::after{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    color: orange;
+    padding: ;
+}
+
+/* ICON HOVER */
+.ragepraa-1:hover{
+  background: #ff8800;
+  transform: scale(1.1);
+}
+ 

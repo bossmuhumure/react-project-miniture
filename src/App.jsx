@@ -2,9 +2,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
 import Home from "../components/Home";
-import BlgHero from "../components/blgHero";
+import BlgHero from "../components/BlgHero";
 import Contact from "../components/Contact";
-import FAQS from "../components/FAQS";
+import FAQS from "../components/FAQs";
 import Contactus from "../components/Contactus";
 import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import Home from "../components/Home";
 import BlgHero from "../components/blgHero";
 import Contact from "../components/Contact";
-import FAQS from "../components/FAQs";
+import FAQS from "../components/FAQS";
 import Contactus from "../components/Contactus";
 import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";

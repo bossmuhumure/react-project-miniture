@@ -5,6 +5,12 @@ import react65 from "../src/assets/react65.webp";
 import react66 from "../src/assets/react66.webp";
 import react67 from "../src/assets/react67.webp";
 import { FaInstagram } from "react-icons/fa";
+import react23 from "../src/assets/react23.webp";
+import react24 from "../src/assets/react24.webp";
+import react25 from "../src/assets/react25.webp";
+import react26 from "../src/assets/react26.webp";
+import react27 from "../src/assets/react27.webp";
+import react28 from "../src/assets/react28.webp";
 function AboutUs() {
     const about = [
         {

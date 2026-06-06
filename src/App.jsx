@@ -8,9 +8,6 @@ import FAQS from "../components/FAQs";
 import Contactus from "../components/Contactus";
 import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";
-
-
-
 function App() {
     return (
 
@@ -22,7 +19,7 @@ function App() {
                     <Route index element={<Home />} />
                     <Route path="/blogs" element={<BlgHero />} />
                     <Route path="/contact" element={<Contact/>}/>
-                     <Route path="/FAQS" element={<FAQS/>}/>
+                     <Route path="pages-v/FAQS" element={<FAQS/>}/>
                      <Route path="pages-v/Contactus" element={<Contactus/>}/>
                       <Route path="pages-v/AboutUs" element={<AboutUs/>}/>
                        <Route path="/Catalogue" element={<Catalogue/>}/>

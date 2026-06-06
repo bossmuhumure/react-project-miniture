@@ -39,6 +39,7 @@
 
 .blog-card {
   background: white;
+  border-radius: 15px;
 }
 
 .blog-image {
@@ -85,4 +86,10 @@
 .accelerator:hover{
      color: white;
     background-color: orange;
+}
+.blog-title{
+  font-size: 23px;
+}
+.blog-title:hover{
+  color: orange;
 }

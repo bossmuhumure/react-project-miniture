@@ -48,29 +48,29 @@ function Navbar() {
       Image: react33
     }
   ];
-     const pagelinks=[
-            {id:1, title:"AboutUs", path:"/AboutUs"},
-            {id:2, title:"FAQS", path:"/FAQS"},
-             {id:3, title:"Contactus", path:"/Contactus"}    
-    ];
-     const [initialPages,SetInitialPages]=useState(false);
-     const pages=[
-      {
-        id:1,title:"About Us"
-      },
-         {
-        id:2,title:"FAQs"
-      },
-         {
-        id:3,title:"Contact Us"
-      }
-     ]; const [initialBag,SetInitialBag]=useState(false);
-       const bag=[
-        {
-          id:1,
-          title:""
-        }
-       ]
+  const pagelinks = [
+    { id: 1, title: "AboutUs", path: "/pages-v/AboutUs" },
+    { id: 2, title: "FAQS", path: "/pages-v/FAQS" },
+    { id: 3, title: "Contactus", path: "/pages-v/Contactus" }
+  ];
+  const [initialPages, SetInitialPages] = useState(false);
+  const pages = [
+    {
+      id: 1, title: "About Us"
+    },
+    {
+      id: 2, title: "FAQs"
+    },
+    {
+      id: 3, title: "Contact Us"
+    }
+  ]; const [initialBag, SetInitialBag] = useState(false);
+  const bag = [
+    {
+      id: 1,
+      title: ""
+    }
+  ]
 
   return (
     <div className="miniture">
@@ -86,10 +86,10 @@ function Navbar() {
           onMouseLeave={() => setIsHovered(false)}
 
         >
-          <a href="/">
-            <span>Home</span>
-            <BiSolidChevronDown className="span-1" />
-          </a>
+          <Link to="/">
+            <span>Home</span><BiSolidChevronDown className="span-1" />
+          </Link>
+
 
           {/* Absolute positioning inline forces the dropdown to float over your existing layout */}
           {isHovered && (
@@ -97,16 +97,16 @@ function Navbar() {
               className="dropdown-menu"
 
             >
-                {HomeLink.map((item) => (
-                  <Link
-                    to={`/home-v${item.id}`}
-                    key={item.id}
-                    className="dropdown-link"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              
+              {HomeLink.map((item) => (
+                <Link
+                  to="/Home"
+                  key={item.id}
+                  className="dropdown-link"
+                >
+                  {item.title}
+                </Link>
+              ))}
+
             </div>
           )}
         </div>
@@ -118,18 +118,18 @@ function Navbar() {
             Catalogue<span><BiSolidChevronDown /></span>
           </Link>
           {isCatalogue && (
-                  
-                   <section className="catalogue-link">
-                  <div className="catalogue-menu">
-                    <h1 className="hello-class">Accent Chairs</h1>
-              <h1 className="hello-class-1">Dining Chair</h1>
-              <h1 className="hello-class-1">  Dining Room</h1>
-              <h1 className="hello-class-1">Kid's Furniture</h1>
-                    </div>  
+
+            <section className="catalogue-link">
+              <div className="catalogue-menu">
+                <h1 className="hello-class">Accent Chairs</h1>
+                <h1 className="hello-class-1">Dining Chair</h1>
+                <h1 className="hello-class-1">  Dining Room</h1>
+                <h1 className="hello-class-1">Kid's Furniture</h1>
+              </div>
               <div className="wwww">
                 {Catalogue.map((item) => (
                   <Link
-                    to={`Catalogue-v${item.id}`}
+                    to="/Catalogue"
                     key={item.id}
                     className="catalogue-item"
                   >
@@ -141,36 +141,37 @@ function Navbar() {
                 )
                 )}
               </div>
-                   </section>
-          ) }
+            </section>
+          )}
         </div>
         <div className="pages-condition"
-        onMouseEnter={()=> SetInitialPages (true)}
-         onMouseLeave={()=> SetInitialPages (false)}
+          onMouseEnter={() => SetInitialPages(true)}
+          onMouseLeave={() => SetInitialPages(false)}
         >
-           <Link 
+          <Link
             to="Pages">
-              Pages<span><BiSolidChevronDown /></span>
-              </Link>
-        {initialPages && (
-          <div className="pages-container">
-         {pagelinks.map((item) => (
-          < Link
-           to={`pages-v${item.path}`}
-           key={item.id}
-           className="pages-pages"
-           >
-            <p>  {item.title}</p>
-          
-           </Link>
-         )
-        )}
-          </div>
+            Pages<span><BiSolidChevronDown /></span>
+          </Link>
+          {initialPages && (
+            <div className="pages-container">
+              {pagelinks.map((item) => (
+                < Link
+                  to={`${item.path}`}
+                  key={item.id}
+                  className="pages-pages"
+                >
+                  <p>  {item.title}</p>
 
-        )}
+                </Link>
+              )
+              )}
+            </div>
+
+          )}
         </div>
-       
-        <a className="blogs-blogs" href="/blogs">blogs</a>
+        <Link className="blogs-blogs" to="/blogs">
+          blogs
+        </Link>
 
         <Link className="blogs-blogs" to="/contact">contact</Link>
       </nav>
@@ -179,35 +180,35 @@ function Navbar() {
         <div><IoSearchSharp className="Icons-1" /></div>
         <div><IoPersonOutline className="Icons-1" /></div>
         <div className="icon-icon"
-        onMouseEnter={()=> SetInitialBag (true)}
-         onMouseLeave={()=> SetInitialBag (false)}
-         
+          onMouseEnter={() => SetInitialBag(true)}
+          onMouseLeave={() => SetInitialBag(false)}
+
         >
-        <div>
-          <LiaShoppingBagSolid 
-          className="Icons-12" />
+          <div>
+            <LiaShoppingBagSolid
+              className="Icons-12" />
           </div>
           {initialBag && (
             <div className="icon-what">
-              {bag.map ((item) =>(
-               <div
-                 to={`pages-v${item.id}`}
-           key={item.id}
-           className="icons-map"
-           > <div className="flex-droo">
-               <h3 className="flex-droop2">Shopping Cart<TbXboxX className="tb-1"/></h3>
-           </div>
-           <div className="why">
-               <h1 className="vvvv">{item.title}</h1>
-             <h1 className="boss">Your cart is currently <br /> empty</h1>
-             <p className="v1v1">Not sure where to start? <br />
-                Try these collections:</p>
-                <button className="button-button"> continue Shopping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><FaArrowRight /></span> </button>
-           </div>
-            
-           </div>
+              {bag.map((item) => (
+                <div
+                  to={`pages-v${item.id}`}
+                  key={item.id}
+                  className="icons-map"
+                > <div className="flex-droo">
+                    <h3 className="flex-droop2">Shopping Cart<TbXboxX className="tb-1" /></h3>
+                  </div>
+                  <div className="why">
+                    <h1 className="vvvv">{item.title}</h1>
+                    <h1 className="boss">Your cart is currently <br /> empty</h1>
+                    <p className="v1v1">Not sure where to start? <br />
+                      Try these collections:</p>
+                    <button className="button-button"> continue Shopping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><FaArrowRight /></span> </button>
+                  </div>
+
+                </div>
               )
-            )}
+              )}
 
             </div>
 

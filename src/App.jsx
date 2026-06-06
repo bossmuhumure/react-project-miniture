@@ -8,6 +8,7 @@ import FAQS from "../components/FAQS";
 import Contactus from "../components/Contactus";
 import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";
+import Pages from "../components/Pages";
 function App() {
     return (
 
@@ -23,6 +24,7 @@ function App() {
                      <Route path="pages-v/Contactus" element={<Contactus/>}/>
                       <Route path="pages-v/AboutUs" element={<AboutUs/>}/>
                        <Route path="/Catalogue" element={<Catalogue/>}/>
+                        <Route path="/Pages" element={<Pages/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>

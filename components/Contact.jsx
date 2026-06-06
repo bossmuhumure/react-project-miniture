@@ -54,10 +54,10 @@ function Contact() {
                         <p>+25079507753 <br />+250795000693</p>
                         <p>Follow us</p>
                         <div className="visual">
-                         <div className="visual-1"><BiLogoFacebook className="visual-2" /></div>
-                          <div className="visual-1"> <RiTwitterXFill className="visual-2" /></div>
-                          <div className="visual-1"><FaInstagram className="visual-2" /></div>
-                           <div className="visual-1"> <IoLogoYoutube className="visual-2" /></div>
+                         <div className="visual-1"><BiLogoFacebook className="visual-5" /></div>
+                          <div className="visual-1"> <RiTwitterXFill className="visual-5" /></div>
+                          <div className="visual-1"><FaInstagram className="visual-5" /></div>
+                           <div className="visual-1"> <IoLogoYoutube className="visual-5" /></div>
                         </div>
                     </div>
                 </div>

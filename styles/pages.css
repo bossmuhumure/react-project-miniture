@@ -1,0 +1,816 @@
+
+/* ICON */
+.but-1{
+    
+    background-color: orange;
+    color: white;
+   
+    height: 2rem;
+    width: 3.5rem;
+    padding: 10px;
+    border-radius: 40%;
+    position: relative;
+    top: 5px;
+}
+
+.but-1:hover{
+    background-color: black;
+    color: white;
+}
+
+/* SHOP BUTTON */
+.shop-one{
+    background-color: orange;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.shop-one:hover{
+    background-color: black;
+    color: white;
+}
+
+/* MAIN CONTAINER */
+.orange{
+    margin-top: 2rem;
+    padding-top: 5rem;
+    line-height: 1.3;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* MAIN IMAGE */
+.reactImage{
+    margin-top: 30px;
+}
+
+.react1{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* GRID CONTAINER */
+.image2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* IMAGE CARD */
+.image-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* IMAGES */
+.image-0{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.image-item:hover .image-0{
+    transform: scale(1.05);
+}
+
+/* TITLE */
+.title1{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+/* SPECIAL GRID LAYOUT */
+.image-item:nth-child(1){
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.image-item:nth-child(2){
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.image-item:nth-child(3){
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.image-item:nth-child(4){
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+
+    .image2{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .image-item:nth-child(1),
+    .image-item:nth-child(2),
+    .image-item:nth-child(3),
+    .image-item:nth-child(4){
+        grid-column: auto;
+        grid-row: auto;
+        height: 300px;
+    }
+
+    .orange{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .react1{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+}
+.www{
+    display: flex;
+    justify-content: center;
+}
+.image-product{
+display: flex;
+flex-direction: row;
+gap: 40px;
+margin-right: 40px;
+}
+.product-1{
+    height: 20em;
+    width: 20rem;
+ border-radius: 20px;
+}
+.product-2{
+    font-weight: 500;
+}
+.div4{
+    display: flex;
+flex-direction: row;
+gap: 40px;
+margin-right: 40px
+}
+.div-2{
+height: 20em;
+    width: 20rem;
+ border-radius: 20px;
+}
+.div-3{
+     font-weight: 500;
+}
+.product-2:hover{
+    color: orange;
+}
+.div-3:hover{
+color: orange;
+}
+.title1:hover
+{
+color: orange;
+}
+/* .cmd2{
+    height: 54rem;
+    width: 43rem;
+   
+   border-radius: 20px;
+}
+.cmd{
+   display: flex;
+   padding-top: 4.8rem;
+   background-image: "{react15}";
+} */
+.button-1{
+      display: flex;
+     border-color: white;
+     background-color: white;
+       border-radius: 30px;
+       font-size: medium;
+       font-weight: 500;
+       justify-content: center;
+        padding: 19px 29px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  
+.button{
+    display: flex;
+
+   align-items: center;
+   justify-content: center;
+       padding-top: 4rem;
+  
+
+}
+.button-1:hover{
+     background-color: orange;
+    color: white;
+}
+
+/* Main grid wrapper if you are displaying multiple cards side-by-side */
+.cmd {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-around;
+   
+}
+
+/* Individual Card Item */
+.cmd1 {
+  width: 100%;
+   justify-content: left;
+}
+
+/* New Wrapper to constrain the absolute elements */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+ border-radius: 24px;
+ padding-top: 5rem;
+  overflow: hidden; /* Cleans the image edges */
+ 
+}
+
+/* Your Image Class */
+.cmd2 {
+  width: 80%;
+  height: 50rem;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1 / 1; /* Keeps it square like the screenshot */
+  border-radius: 30px;
+}
+
+/* Centered Play Button */
+/* .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  z-index: 2;
+} */
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.play-icon {
+  width: 24px;
+  height: 24px;
+  color: #111111;
+  margin-left: 4px; /* Centers triangle optically */
+}
+
+/* Your Text Overlay Container (The White Badge) */
+.cmd3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 24px 32px 24px 24px;
+  max-width: 80%;
+  border-top-right-radius: 24px;
+  z-index: 2;
+  
+}
+
+/* The magic trick for the inverted curve on the right side of the white box */
+.cmd3::after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border-bottom-left-radius: 24px;
+  box-shadow: -10px 10px 0 0 #ffffff;
+  pointer-events: none;
+}
+
+/* Inner Text Styles */
+.mini-tag {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666666;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.title-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Optional Paragraph Style underneath the card */
+.cmd4 {
+
+  color: #444444;
+  font-size: 0.95rem;
+}
+.hhh{
+    padding-top: 6rem;
+    justify-content: space-between;
+}
+.div-container{
+    grid-column: 2;
+    display: flex;
+    padding-top: 2rem;
+}
+.padding-1{
+    padding: 20px;
+
+}
+.hello{
+    display: flex;
+    gap: 30px;
+    
+  
+}
+  .hello-1{
+ padding: 20px 15px;
+  height: 47px;
+  width: 60px;
+  border-radius: 50%;
+   border:1px solid rgb(188, 186, 180);
+  }
+  .paragraphy{
+font-size: 100%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.h1-h1{
+    padding-top: 18rem;
+}
+  .buton{
+     display: flex;
+
+   align-items: center;
+   justify-content: center;
+       padding-top: 4rem;
+  }
+  .button-2{
+    
+      display: flex;
+     border-color: white;
+     background-color: orange;
+       color: white;
+       border-radius: 30px;
+       font-size: medium;
+       font-weight: 500;
+       justify-content: center;
+        padding: 19px 29px; 
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+    .button-2:hover{
+        background-color: #111111;
+        color: white;
+    }
+  .iranzi-0{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+  
+
+    padding-top: 4rem;
+}
+
+.iranzi-1{
+    position:relative;
+    overflow:hidden;
+    border-radius:25px;
+    height:650px;
+    background:#fff;
+}
+
+.iranzi-2{
+    width:100%;
+    height:100%;
+    position:relative;
+    border-radius: 40px;
+}
+
+.iranzi-3{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:25px;
+    transition:0.5s;
+}
+
+.iranzi-1:hover .iranzi-3{
+    transform:scale(1.05);
+}
+
+
+.iranzi-1::before{
+    content:"CRAFT OWN FURNITURE";
+    position:absolute;
+    top:2px;
+    right:40px;
+    color:#777;
+    font-size:18px;
+    letter-spacing:3px;
+    z-index:2;
+    
+    background:#fff;
+}
+
+
+.iranzi-1::after{
+    content:"Your new forever favorites are here";
+    position:absolute;
+    top:60px;
+    right:0px;
+   border-radius: 20px;
+     
+
+    background:#fff;
+    color:#000;
+
+    padding:25px 50px;
+
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+
+    font-size:22px;
+    font-weight:bold;
+
+    z-index:2;
+}
+.first{
+    display: flex;
+    justify-content: center;
+}
+.ngoga{
+    display: flex;
+gap: 40px;
+}
+.ngoga-3{
+   height: 20em;
+    width: 20rem;
+ border-radius: 20px;
+}
+.ngoga-4:hover{
+    
+    color: orange;
+}
+.ngoga-4{
+font-size: 17px;
+
+}
+.boss-0{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    gap:35px;
+    padding:20px;
+}
+
+.boss-1{
+    width:100%;
+}
+
+.boss-2{
+    position:relative;
+    width:100%;
+    height:650px;
+    overflow:hidden;
+    border-radius:30px;
+}
+
+.boss-3{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+/* hover effect */
+
+.boss-2:hover .boss-3{
+    transform:scale(1.05);
+}
+
+/* TITLE IRI HEJURU */
+
+.boss-4{
+  position: absolute;
+    bottom: 20px;
+    left:20px;
+
+    color:#888;
+    font-size:18px;
+    letter-spacing:1px;
+    font-weight:500;
+   background-color: white;
+}
+
+/* TITLE YINJIRA MU IFOTO KU RIGHT */
+
+.boss-5{
+    position:absolute;
+
+    top:200px;
+    right:0;
+
+    background:white;
+
+    padding:25px 45px;
+
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px;
+
+    font-size:30px;
+    font-weight: 100px;
+
+    color:black;
+}
+.box-0{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+.box-1{
+    font-size:20px;
+    padding: 20px 15px;
+  height: 47px;
+  width: 49px;
+  border-radius: 50%;
+   border:1px solid rgb(188, 186, 180);
+   margin-right: 20px;
+
+}
+.p1-1{
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 2px;
+    margin-left: 65px;
+}
+/* MAIN CONTAINER */
+.ragepra{
+  grid-column: 2;
+  display: flex;
+  padding-top: 2rem;
+}
+
+/* GALLERY */
+.ragepra-0{
+  column-count: 3;
+  column-gap: 20px;
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* EACH IMAGE CARD */
+.ragepra-1{
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+.ragepra-2{
+  width: 240px;
+  height: 270px;
+  display: block;
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.ragepra-1:hover .ragepra-2{
+  transform: scale(1.05);
+}
+
+/* INSTAGRAM ICON */
+.ragepraa-1{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ragepraa-1::after{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    color: orange;
+    padding: ;
+}
+
+/* ICON HOVER */
+.ragepraa-1:hover{
+  background: #ff8800;
+  transform: scale(1.1);
+}
+ 
+.claire-1{
+justify-content: left;
+padding-top: 9rem;
+}
+.claire-2{
+ font-size: 30px;
+ font-weight: bold;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.claire-3{
+    font-size: 16px;
+}
+.claire-4{
+  margin-top: 2rem;
+  border-radius: 20px;
+  height: 43px;
+  background-color: white;
+  color: #000;
+  border-color: rrgb(232, 218, 150);
+  width: 150px;
+}
+.claire-4:hover{
+    background-color: orange;
+    color: white;
+    border: none;
+}
+/* CONTAINER Y'IZO ICON ZOSE */
+.part1-3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* BURI ICON */
+.part1-4{
+    width: 56px;
+    height: 34px;
+
+    border-radius: 50%; /* circle */
+    border-color: #ff8800;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    border: 2px solid #9a9793;
+
+    transition: 0.3s ease;
+}
+.text{
+    height: 53px;
+    width: 250px;
+    border-radius: 3px;
+    background-color: #111111;
+    border: none;
+    color: white;
+}
+.part1-5{
+padding: 15px;
+border-radius: 20px;
+    background-color: #ff8800; 
+}
+.part1-4:hover{
+    color: orange;
+}
+.formal{
+    background-color: black;
+    color: white;
+}
+.clash-5:hover{
+color: orange;
+}
+.blog-all{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: black;
+    color: white;
+}
+.blog-button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+text-align: center;
+}
+.blog-container{
+    margin-top: 120px;
+    text-align: center;
+    justify-content: center;  
+}
+.blog-all1{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: white;
+    color: black;
+}
+.blog-all2{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: white;
+    color: #666666;
+}
+.blog-all3{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: white;
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog-all4{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: white;
+    color: #9a9793;
+}
+.blog-all5{
+    gap: 20px;
+    width: 70px;
+    height: 34px;
+    border-radius: 15px; 
+    background-color: white;
+    color: #9a9793;
+}
+.blog-image {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.blog-image1 {
+  width: 100%;
+}
+
+.blog-image3 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+     border-radius: 12px;
+}
+
+.blog-image3:hover {
+  transform: scale(1.05);
+}

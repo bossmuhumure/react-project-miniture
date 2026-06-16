@@ -10,6 +10,8 @@ import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";
 import Pages from "../components/Pages";
 import Page from "../components/Pages";
+import Signup from "../components/signup";
+import Login from "../components/login";
 function App() {
     return (
 
@@ -28,6 +30,8 @@ function App() {
                         <Route path="/Pages" element={<Pages/>}/>
                          <Route path="/Page" element={<Page/>}/>
                 </Route>
+                <Route path="/Login" element={<Login/>}/>
+                <Route path="/Signup" element={<Signup/>}/>
             </Routes>
         </BrowserRouter>
 

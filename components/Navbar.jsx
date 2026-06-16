@@ -178,7 +178,8 @@ function Navbar() {
 
       <div className="icon-1">
         <div><IoSearchSharp className="Icons-1" /></div>
-        <div><IoPersonOutline className="Icons-1" /></div>
+        <div><a href="Login"><IoPersonOutline className="Icons-1" /></a>
+          </div>
         <div className="icon-icon"
           onMouseEnter={() => SetInitialBag(true)}
           onMouseLeave={() => SetInitialBag(false)}

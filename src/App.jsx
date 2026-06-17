@@ -10,8 +10,8 @@ import AboutUs from "../components/AboutUs";
 import Catalogue from "../components/Catalogue";
 import Pages from "../components/Pages";
 import Page from "../components/Pages";
-import Signup from "../components/signup";
-import Login from "../components/login";
+import Signup from "../components/Signup";
+import Login from "../components/Login";
 function App() {
     return (
 

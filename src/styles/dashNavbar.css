@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* LEFT SIDE */
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-btn{
+    width: 50px;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 12px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.search-box{
+    width: 550px;
+    justify-content: center;
+    height: 52px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 18px;
+}
+
+.search-icon{
+    font-size: 22px;
+    color: #6b7280;
+}
+
+.search-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #111827;
+}
+
+.search-box input::placeholder{
+    color: #9ca3af;
+}
+
+.shortcut{
+    padding: 5px 10px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* RIGHT SIDE */
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icon-btn:hover{
+    background-color: #f3f4f6;
+}
+
+.notification{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.notification:hover{
+    background-color: #f3f4f6;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #f97316;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: 13px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.profile svg{
+    font-size: 18px;
+    color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .search-box{
+        width: 250px;
+    }
+
+    .profile span{
+        display: none;
+    }
+
+    .shortcut{
+        display: none;
+    }
+}

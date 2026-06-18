@@ -1,0 +1,59 @@
+.sidebar-start{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-sidebar{
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+        border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: rgb(47, 47, 202);
+    color: white;
+}
+
+.sidebar-tail{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 200px;
+}
+.paragraphy{
+    font-size: 20px;
+    font-weight: 50px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-top: 14px;
+   color: rgb(78, 73, 73);
+
+}
+.siderbar{
+    margin-left: 10px;
+}
+.icon-one{
+   font-size: 40px;
+      vertical-align: middle;
+        margin-left: 40px;
+
+}
+.icon-two{
+   font-size: 35px;
+      vertical-align: middle;   
+}
+.division{
+       margin-top: 20px;
+}
+.icon-zero{
+       vertical-align: middle;
+}
+.twice{
+    display: flex;
+    align-items: center;
+}
+.division{
+    gap: 20px;
+}

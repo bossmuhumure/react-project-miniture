@@ -7,15 +7,15 @@ function Signup() {
     const handleSignup = async (data) => {
 
         try {
-            const { FirstName, LastName, email, password } = data;
+            const { firstName, lastName, email, password } = data;
             const formData = new FormData();
-            formData.append("FirstName", FirstName);
-            formData.append("LastName", LastName);
+            formData.append("firstName", firstName);
+            formData.append("lastName", lastName);
             formData.append("email", email);
             formData.append("password", password);
 
 
-            const res = await axios.post(`http://localhost:5000/api_v1/auth/register`, formData, {
+            const res = await axios.post(`http://localhost:3000/api/v1/auth/register`, formData, {
                 headers: {
                     "Content-Type": "application/json"
                 }
@@ -37,21 +37,21 @@ function Signup() {
             <div className="">
                 <h1>Signup Page</h1>
                 <input type="text" placeholder="Firstname" className=""
-                    {...register("FirstName", { required: true, })}
+                    {...register("firstName", { required: true, })}
                 />
-                {errors.FirstName && <p className="">Firstname is required</p>}
+                {errors.firstName && <p className="">Firstname is required</p>}
                 <input type="text" placeholder="Lastname" className=""
-                    {...register("LastName", { required: true })}
+                    {...register("lastName", { required: true })}
                 />
-                {errors.LastName && <p className="text-red-500">Lastname is required</p>}
+                {errors.lastName && <p className="text-red-500">Lastname is required</p>}
                 <input type="email" placeholder="Email" className=""
                     {...register("email", { required: true })}
                 />
                 {errors.email && <p className="text-red-500">Email is required</p>}
                 <input type="password" placeholder="Password" className=""
-                    {...register("password", { required: true, minLength: 8 })}
+                    {...register("password", { required: true})}
                 />
-                {errors.password && <p className="">Password is required and must be at least 8 characters long</p>}
+                {errors.password && <p className="">Password is required</p>}
                 <button className="" type="submit">Signup</button>
             </div>
         </form>

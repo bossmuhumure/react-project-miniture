@@ -4,10 +4,10 @@ import { IoSearchSharp, IoPersonOutline } from "react-icons/io5";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { BiSolidChevronDown } from "react-icons/bi";
 import "../styles/navbar.css";
-import react30 from "../src/assets/react30.webp";
-import react31 from "../src/assets/react31.webp";
-import react32 from "../src/assets/react32.webp";
-import react33 from "../src/assets/react33.webp";
+import react30 from "../../src/assets/react30.webp";
+import react31 from "../../src/assets/react31.webp";
+import react32 from "../../src/assets/react32.webp";
+import react33 from "../../src/assets/react33.webp";
 import { TbXboxX } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 function Navbar() {

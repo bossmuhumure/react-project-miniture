@@ -1,4 +1,4 @@
- import react68 from "../src/assets/react68.webp";
+ import react68 from "../../src/assets/react68.webp";
  import "../styles/Faqs.css";
  import { FaPlus } from "react-icons/fa6";
 

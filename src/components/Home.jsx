@@ -1,47 +1,47 @@
-import "../styles/pages.css";
+import "../styles/Home.css";
 import "../styles/footer.css";
 import { LuBedSingle } from "react-icons/lu";
 
-import react1 from "../src/assets/react1.webp";
-import react2 from "../src/assets/react2.webp";
-import react4 from "../src/assets/react4.webp";
-import react5 from "../src/assets/react5.webp";
-import react6 from "../src/assets/react6.webp";
+import react1 from "../../src/assets/react1.webp";
+import react2 from "../../src/assets/react2.webp";
+import react4 from "../../src/assets/react4.webp";
+import react5 from "../../src/assets/react5.webp";
+import react6 from "../../src/assets/react6.webp";
 import { BiSolidChevronDown } from "react-icons/bi";
-import react7 from "../src/assets/react7.webp";
-import react8 from "../src/assets/react8.webp";
-import react9 from "../src/assets/react9.webp";
-import react10 from "../src/assets/react10.webp";
-import react11 from "../src/assets/react11.webp";
-import react12 from "../src/assets/react12.webp";
-import react13 from "../src/assets/react13.webp";
-import react14 from "../src/assets/react14.webp";
-import react15 from "../src/assets/react-15.webp";
-import react16 from "../src/assets/react16.webp";
-import react17 from "../src/assets/react17.webp";
-import react18 from "../src/assets/react18.webp";
-import react19 from "../src/assets/react19.webp";
-import react20 from "../src/assets/react20.webp";
-import react21 from "../src/assets/react21.png";
-import react22 from "../src/assets/react22.webp";
+import react7 from "../../src/assets/react7.webp";
+import react8 from "../../src/assets/react8.webp";
+import react9 from "../../src/assets/react9.webp";
+import react10 from "../../src/assets/react10.webp";
+import react11 from "../../src/assets/react11.webp";
+import react12 from "../../src/assets/react12.webp";
+import react13 from "../../src/assets/react13.webp";
+import react14 from "../../src/assets/react14.webp";
+import react15 from "../../src/assets/react-15.webp";
+import react16 from "../../src/assets/react16.webp";
+import react17 from "../../src/assets/react17.webp";
+import react18 from "../../src/assets/react18.webp";
+import react19 from "../../src/assets/react19.webp";
+import react20 from "../../src/assets/react20.webp";
+import react21 from "../../src/assets/react21.png";
+import react22 from "../../src/assets/react22.webp";
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { LiaInboxSolid } from "react-icons/lia";
 import { PiSpinnerBallLight } from "react-icons/pi";
 import { MdOutlinePayment } from "react-icons/md";
-import react23 from "../src/assets/react23.webp";
-import react24 from "../src/assets/react24.webp";
-import react25 from "../src/assets/react25.webp";
-import react26 from "../src/assets/react26.webp";
-import react27 from "../src/assets/react27.webp";
-import react28 from "../src/assets/react28.webp";
+import react23 from "../../src/assets/react23.webp";
+import react24 from "../../src/assets/react24.webp";
+import react25 from "../../src/assets/react25.webp";
+import react26 from "../../src/assets/react26.webp";
+import react27 from "../../src/assets/react27.webp";
+import react28 from "../../src/assets/react28.webp";
 import { FaInstagram } from "react-icons/fa";
 import { BiLogoFacebook } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa6";
-import react34 from "../src/assets/react34.webp";
+import react34 from "../../src/assets/react34.webp";
 import React, { useState, useEffect } from "react";
-function Page() {
+function Home() {
     const one = [
         {
             id: 1,
@@ -454,4 +454,4 @@ function Page() {
 }
 
 
-export default Page;
+export default Home;

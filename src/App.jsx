@@ -1,17 +1,19 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout";
-import Home from "../components/Home";
-import BlgHero from "../components/BlgHero";
-import Contact from "../components/Contact";
-import FAQS from "../components/FAQs";
-import Contactus from "../components/Contactus";
-import AboutUs from "../components/AboutUs";
-import Catalogue from "../components/Catalogue";
-import Pages from "../components/Pages";
-import Page from "../components/Pages";
-import Signup from "../components/Signup";
-import Login from "../components/Login";
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import BlgHero from "./components/BlgHero";
+import Contact from "./components/Contact";
+import FAQS from "./components/FAQs";
+import Contactus from "./components/Contactus";
+import AboutUs from "./components/AboutUs";
+import Catalogue from "./components/Catalogue";
+import Pages from "./components/Pages";
+import Page from "./components/Pages";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import DashboardLayout from "./dasboard/dashboardsetting/dashboardLayout";
+import DashboardIndex from "./dasboard/dashboardPage/DashboardIndex";
 function App() {
     return (
 
@@ -32,7 +34,11 @@ function App() {
                 </Route>
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Signup" element={<Signup/>}/>
+                <Route path="dashboard" element={<DashboardLayout />}>
+                 <Route index element={<DashboardIndex />} />  
+                </Route>
             </Routes>
+
         </BrowserRouter>
 
     );

@@ -1,17 +1,17 @@
-import "../styles/contactus.css";
-import react62 from "../src/assets/react62.png";
+import "../styles/contact.css";
+import react62 from "../../src/assets/react62.png";
 import { BiLogoFacebook } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
-function Contactus(){
-        const array = [
-            {
-                id: 1, image: react62,
-            }
-        ]
-    return(
- <div >
+function Contact() {
+    const array = [
+        {
+            id: 1, image: react62,
+        }
+    ]
+    return (
+        <div >
             <div className="contact-where" >
                 <h1>We’re here for you</h1>
                 <p>Our friendly team is always here to chat.</p>
@@ -63,6 +63,7 @@ function Contactus(){
                 </div>
             </section>
         </div>
+
     )
 }
-export default Contactus
+export default Contact

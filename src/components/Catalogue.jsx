@@ -1,7 +1,7 @@
-import react41 from "../src/assets/react41.webp";
+import react41 from "../../src/assets/react41.webp";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import react20 from "../src/assets/react20.webp";
-import react19 from "../src/assets/react19.webp";
+import react20 from "../../src/assets/react20.webp";
+import react19 from "../../src/assets/react19.webp";
 function Catalogue() {
     const catalogue = [
         {

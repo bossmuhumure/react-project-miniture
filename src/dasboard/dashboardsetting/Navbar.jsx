@@ -1,17 +1,32 @@
+import React, { useState } from "react";
 import "../../styles/dashNavbar.css"
 import {
     FiMenu,
     FiSearch,
     FiMoon,
+    FiSun,
     FiBell,
     FiChevronDown,
 } from "react-icons/fi";
-const Navbar = () => {
+
+const Navbar = ({ toggleSidebar }) => {
+    // Read current theme state set by head initializer script
+    const [theme, setTheme] = useState(() => {
+        return document.documentElement.getAttribute("data-theme") || "light";
+    });
+
+    const toggleTheme = () => {
+        const newTheme = theme === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        setTheme(newTheme);
+    };
+
     return (
         <nav className="navbar">
             {/* Left Side */}
             <div className="navbar-left">
-                <button className="menu-btn">
+                <button className="menu-btn" onClick={toggleSidebar}>
                     <FiMenu />
                 </button>
 
@@ -31,8 +46,13 @@ const Navbar = () => {
 
             {/* Right Side */}
             <div className="navbar-right">
-                <button className="icon-btn">
-                    <FiMoon />
+                <button 
+                    className="icon-btn" 
+                    onClick={toggleTheme}
+                    title="Toggle Theme"
+                    aria-label="Toggle Theme"
+                >
+                    {theme === "dark" ? <FiSun /> : <FiMoon />}
                 </button>
 
                 <div className="notification">

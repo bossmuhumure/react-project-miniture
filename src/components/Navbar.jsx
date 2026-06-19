@@ -177,17 +177,17 @@ function Navbar() {
       </nav>
 
       <div className="icon-1">
-        <div><IoSearchSharp className="Icons-1" /></div>
-        <div><a href="Login"><IoPersonOutline className="Icons-1" /></a>
-          </div>
+        <div className="Icons-12" ><IoSearchSharp /></div>
+        <div className="Icons-12"><a href="Login"><IoPersonOutline/></a>
+        </div>
         <div className="icon-icon"
           onMouseEnter={() => SetInitialBag(true)}
           onMouseLeave={() => SetInitialBag(false)}
 
         >
-          <div>
+          <div className="Icons-1">
             <LiaShoppingBagSolid
-              className="Icons-12" />
+              />
           </div>
           {initialBag && (
             <div className="icon-what">

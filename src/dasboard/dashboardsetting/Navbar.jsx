@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/dashNavbar.css"
 import {
     FiMenu,
@@ -7,9 +8,11 @@ import {
     FiSun,
     FiBell,
     FiChevronDown,
+    FiLogOut,
 } from "react-icons/fi";
 
 const Navbar = ({ toggleSidebar }) => {
+    const navigate = useNavigate();
     // Read current theme state set by head initializer script
     const [theme, setTheme] = useState(() => {
         return document.documentElement.getAttribute("data-theme") || "light";
@@ -20,6 +23,11 @@ const Navbar = ({ toggleSidebar }) => {
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
         setTheme(newTheme);
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem("userRole");
+        navigate("/Login");
     };
 
     return (
@@ -70,6 +78,14 @@ const Navbar = ({ toggleSidebar }) => {
 
                     <FiChevronDown />
                 </div>
+
+                <button 
+                    onClick={handleLogout} 
+                    className="logout-icon-btn" 
+                    title="Logout"
+                >
+                    <FiLogOut />
+                </button>
             </div>
         </nav>
     );

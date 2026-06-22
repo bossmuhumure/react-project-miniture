@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
@@ -11,6 +11,15 @@ function Signup() {
     const [loading, setLoading] = useState(false);
     const [authSuccess, setAuthSuccess] = useState("");
     const [authError, setAuthError] = useState("");
+
+    useEffect(() => {
+        const role = localStorage.getItem("userRole");
+        if (role === "admin") {
+            navigate("/dashboard");
+        } else if (role === "user") {
+            navigate("/");
+        }
+    }, [navigate]);
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
 

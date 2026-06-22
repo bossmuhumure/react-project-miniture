@@ -40,9 +40,7 @@
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.dashboard-card:hover {
-  box-shadow: var(--shadow-md);
-}
+.dashboard-card:hover {}
 
 /* Card Header */
 .card-header {
@@ -83,10 +81,7 @@
   transition: background-color 0.2s;
 }
 
-.card-actions-btn:hover {
-  background-color: var(--primary-light);
-  color: var(--primary);
-}
+.card-actions-btn:hover {}
 
 /* Stat Cards (Customers & Orders) */
 .stat-card {
@@ -342,9 +337,7 @@
   transition: all 0.2s ease;
 }
 
-.tab-btn:hover {
-  color: var(--text-main);
-}
+.tab-btn:hover {}
 
 .tab-btn.active {
   background-color: var(--bg-card);
@@ -368,10 +361,7 @@
   transition: border-color 0.2s;
 }
 
-.date-picker-button:hover {
-  border-color: var(--border-hover);
-  color: var(--text-main);
-}
+.date-picker-button:hover {}
 
 .date-picker-icon {
   font-size: 15px;
@@ -404,4 +394,26 @@
     width: 100%;
     justify-content: space-between;
   }
+}
+
+/* Interactive Chart Elements */
+.chart-interactive-slice {
+  cursor: pointer;
+}
+
+.chart-marker-dot {
+  pointer-events: none;
+  transition: all 0.15s ease;
+}
+
+.chart-tooltip-header {
+  font-weight: 700;
+  margin-bottom: 4px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
+}
+
+.chart-tooltip-target {
+  color: #f97316;
 }

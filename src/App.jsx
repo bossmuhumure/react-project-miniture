@@ -14,6 +14,11 @@ import Signup from "./components/Signup";
 import Login from "./components/Login";
 import DashboardLayout from "./dasboard/dashboardsetting/dashboardLayout";
 import DashboardIndex from "./dasboard/dashboardPage/DashboardIndex";
+import Products from "./dasboard/dashboardPage/Products";
+import Users from "./dasboard/dashboardPage/Users";
+import Settings from "./dasboard/dashboardPage/Settings";
+import DashContact from "./dasboard/dashboardPage/Contact";
+
 function App() {
     return (
 
@@ -35,7 +40,11 @@ function App() {
                 <Route path="/Login" element={<Login/>}/>
                 <Route path="/Signup" element={<Signup/>}/>
                 <Route path="dashboard" element={<DashboardLayout />}>
-                 <Route index element={<DashboardIndex />} />  
+                    <Route index element={<DashboardIndex />} />
+                    <Route path="products" element={<Products />} />
+                    <Route path="users" element={<Users />} />
+                    <Route path="settings" element={<Settings />} />
+                    <Route path="contact" element={<DashContact />} />
                 </Route>
             </Routes>
 

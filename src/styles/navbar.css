@@ -310,3 +310,19 @@ color: orange;
 .button-button:hover{
 color: orange;
 }
+
+.logout-nav-btn {
+    font-size: 20px;
+    padding: 7px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.logout-nav-btn:hover {
+    color: orange;
+}

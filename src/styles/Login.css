@@ -1,5 +1,9 @@
 .Login_user{
     display: none;
     justify-content: center;
+   
     
+}
+.auth-btn{
+ background-color: orange;
 }

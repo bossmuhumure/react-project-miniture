@@ -166,7 +166,7 @@ const DashboardIndex = () => {
                   height={barHeight}
                   rx={4}
                   className="chart-bar"
-                  fill={salesTooltip?.month === d.month ? "var(--primary)" : "#3C50E0"}
+                  fill={salesTooltip?.month === d.month ? "var(--primary)" : "#f97316"}
                 />
 
                 {/* X axis labels */}
@@ -247,8 +247,8 @@ const DashboardIndex = () => {
           {/* Gradients */}
           <defs>
             <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#3C50E0" stopOpacity="0.15" />
-              <stop offset="100%" stopColor="#3C50E0" stopOpacity="0.00" />
+              <stop offset="0%" stopColor="#f97316" stopOpacity="0.15" />
+              <stop offset="100%" stopColor="#f97316" stopOpacity="0.00" />
             </linearGradient>
           </defs>
 
@@ -283,7 +283,7 @@ const DashboardIndex = () => {
           <path
             d={getBezierPath(targetPoints)}
             fill="none"
-            stroke="#80CAEE"
+            stroke="#f97316"
             strokeWidth="3"
             strokeDasharray="6 4"
           />
@@ -292,7 +292,7 @@ const DashboardIndex = () => {
           <path
             d={getBezierPath(revenuePoints)}
             fill="none"
-            stroke="#3C50E0"
+            stroke="#f97316"
             strokeWidth="3.5"
             strokeLinecap="round"
           />
@@ -300,14 +300,14 @@ const DashboardIndex = () => {
           {/* Data point markers (dots) */}
           {revenuePoints.map((pt, i) => (
             <g key={i}>
-              {/* Invisible interactive vertical slice for tooltips */}
+               {/* Invisible interactive vertical slice for tooltips */}
               <rect
                 x={pt.x - spacing / 2}
                 y={paddingTop}
                 width={spacing}
                 height={plotHeight}
                 fill="transparent"
-                style={{ cursor: "pointer" }}
+                className="chart-interactive-slice"
                 onMouseEnter={() => {
                   setStatsTooltip({
                     x: pt.x,
@@ -326,9 +326,9 @@ const DashboardIndex = () => {
                 cy={pt.y}
                 r={statsTooltip?.label === pt.data.label ? 6 : 4}
                 fill="white"
-                stroke="#3C50E0"
+                stroke="#f97316"
                 strokeWidth="3"
-                style={{ pointerEvents: "none", transition: "all 0.15s ease" }}
+                className="chart-marker-dot"
               />
 
               {/* Dot on Target point */}
@@ -337,9 +337,9 @@ const DashboardIndex = () => {
                 cy={targetPoints[i].y}
                 r={statsTooltip?.label === pt.data.label ? 5 : 3.5}
                 fill="white"
-                stroke="#80CAEE"
+                stroke="#f97316"
                 strokeWidth="2.5"
-                style={{ pointerEvents: "none", transition: "all 0.15s ease" }}
+                className="chart-marker-dot"
               />
 
               {/* X Axis Labels */}
@@ -364,11 +364,11 @@ const DashboardIndex = () => {
               top: `${(statsTooltip.y / height) * 100}%`
             }}
           >
-            <div style={{ fontWeight: 700, marginBottom: "4px", fontSize: "12px", borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "2px" }}>
+            <div className="chart-tooltip-header">
               {statsTooltip.label}
             </div>
             <div>Rev: <strong>{activeTab === "Annually" ? `$${statsTooltip.revenue}K` : statsTooltip.revenue}</strong></div>
-            <div style={{ color: "#80CAEE" }}>Target: <strong>{activeTab === "Annually" ? `$${statsTooltip.target}K` : statsTooltip.target}</strong></div>
+            <div className="chart-tooltip-target">Target: <strong>{activeTab === "Annually" ? `$${statsTooltip.target}K` : statsTooltip.target}</strong></div>
           </div>
         )}
       </div>
@@ -466,7 +466,7 @@ const DashboardIndex = () => {
                   cx="75"
                   cy="75"
                   r="60"
-                  stroke="#3C50E0"
+                  stroke="#f97316"
                   strokeWidth="11"
                   fill="none"
                   strokeDasharray={`${targetProgressLength} ${targetCircumference}`}

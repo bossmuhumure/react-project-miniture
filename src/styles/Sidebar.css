@@ -44,10 +44,7 @@
   transition: background-color 0.2s;
 }
 
-.sidebar-toggle-btn:hover {
-  background-color: var(--primary-light);
-  color: var(--primary);
-}
+.sidebar-toggle-btn:hover {}
 
 /* Sidebar Body Menu */
 .sidebar-menu-wrapper {
@@ -100,10 +97,7 @@
 }
 
 .menu-item-header:hover,
-.menu-item-link:hover {
-  background-color: var(--primary-light);
-  color: var(--primary);
-}
+.menu-item-link:hover {}
 
 .menu-item-header.expanded {
   color: var(--primary);
@@ -161,10 +155,7 @@
   transition: all 0.2s ease;
 }
 
-.submenu-item:hover {
-  color: var(--primary);
-  background-color: var(--primary-light);
-}
+.submenu-item:hover {}
 
 .submenu-item.active {
   background-color: var(--primary-light);
@@ -201,4 +192,39 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+/* Logout Button */
+.logout-btn {
+  background: none !important;
+  border: none !important;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: orange !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {}
+
+.logout-btn:hover .menu-icon {
+  color: #be123c !important;
+}
+
+/* Active link in sidebar */
+.sidebar-active {
+  background-color: var(--primary-light) !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+}
+
+/* menu-item-link display fix */
+.menu-item-link {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  justify-content: flex-start !important;
 }

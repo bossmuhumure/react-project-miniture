@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
@@ -10,6 +10,15 @@ function Login() {
     const [showPassword, setShowPassword] = useState(false);
     const [loading, setLoading] = useState(false);
     const [authError, setAuthError] = useState("");
+
+    useEffect(() => {
+        const role = localStorage.getItem("userRole");
+        if (role === "admin") {
+            navigate("/dashboard");
+        } else if (role === "user") {
+            navigate("/");
+        }
+    }, [navigate]);
     
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
@@ -114,12 +123,12 @@ function Login() {
                     </div>
 
                     <button type="submit" className="auth-btn" disabled={loading}>
-                        {loading ? "Signing In..." : "Sign In"}
+                        {loading ? "verify..." : "Log in"}
                     </button>
                 </form>
 
                 <div className="auth-footer">
-                    <span>Don't have an account? <Link to="/Login" className="auth-link">Sign up here</Link></span>
+                    <span>Don't have an account? <Link to="/Signup" className="auth-link">Sign up here</Link></span>
                 </div>
             </div>
         </div>

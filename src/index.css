@@ -1,8 +1,8 @@
 /* Design System Variables */
 :root {
-  --primary: #3c50e0;
-  --primary-light: #eef2ff;
-  --primary-hover: #2a3dbb;
+  --primary: #eab308;
+  --primary-light: #fef9c3;
+  --primary-hover: #eab308;
   
   --bg-main: #f1f5f9;
   --bg-card: #ffffff;
@@ -43,8 +43,8 @@
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   
-  --primary-light: rgba(60, 80, 224, 0.15);
-  --primary-hover: #4c63ff;
+  --primary-light: rgba(234, 179, 8, 0.15);
+  --primary-hover: #eab308;
 }
 
 /* Fallback System preferences dark mode */
@@ -61,8 +61,8 @@
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
     
-    --primary-light: rgba(60, 80, 224, 0.15);
-    --primary-hover: #4c63ff;
+    --primary-light: rgba(234, 179, 8, 0.15);
+    --primary-hover: #eab308;
   }
 }
 

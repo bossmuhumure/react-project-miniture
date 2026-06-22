@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { IoSearchSharp, IoPersonOutline } from "react-icons/io5";
+import { FiLogOut } from "react-icons/fi";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { BiSolidChevronDown } from "react-icons/bi";
 import "../styles/navbar.css";
@@ -11,6 +12,20 @@ import react33 from "../../src/assets/react33.webp";
 import { TbXboxX } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa6";
 function Navbar() {
+  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const role = localStorage.getItem("userRole");
+    setIsLoggedIn(!!role);
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("userRole");
+    setIsLoggedIn(false);
+    navigate("/Login");
+  };
+
   const [isHovered, setIsHovered] = useState(false);
 
   const HomeLink = [
@@ -178,8 +193,22 @@ function Navbar() {
 
       <div className="icon-1">
         <div className="Icons-12" ><IoSearchSharp /></div>
-        <div className="Icons-12"><a href="Login"><IoPersonOutline/></a>
-        </div>
+        {isLoggedIn ? (
+          <button 
+            onClick={handleLogout} 
+            className="Icons-12" 
+            style={{ background: "none", border: "none", cursor: "pointer", color: "inherit", display: "inline-flex", alignItems: "center" }}
+            title="Logout"
+          >
+            <FiLogOut />
+          </button>
+        ) : (
+          <div className="Icons-12">
+            <Link to="/Login" title="Login">
+              <IoPersonOutline/>
+            </Link>
+          </div>
+        )}
         <div className="icon-icon"
           onMouseEnter={() => SetInitialBag(true)}
           onMouseLeave={() => SetInitialBag(false)}

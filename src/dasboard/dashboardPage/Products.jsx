@@ -108,7 +108,7 @@ const Products = () => {
           padding: "60px", flexDirection: "column", gap: "16px"
         }}>
           <div className="api-spinner"></div>
-          <p style={{ color: "#6b7280", fontSize: "14px" }}>Gutegura products...</p>
+          <p style={{ color: "#6b7280", fontSize: "14px" }}>verify...</p>
         </div>
       )}
 
@@ -122,7 +122,7 @@ const Products = () => {
         }}>
           <FiAlertCircle size={20} />
           <div>
-            <p style={{ fontWeight: 600, margin: 0 }}>Habonetse ikibazo!</p>
+            <p style={{ fontWeight: 600, margin: 0 }}>check error!</p>
             <p style={{ fontSize: "13px", margin: "4px 0 0 0", opacity: 0.8 }}>{error}</p>
           </div>
           <button
@@ -153,10 +153,10 @@ const Products = () => {
             <table className="dash-table">
               <thead>
                 <tr>
-                  <th>Product</th>
-                  <th>Category</th>
-                  <th>Price</th>
-                  <th>Description</th>
+                  <th>productName</th>
+                  <th>productCategory</th>
+                  <th>productPrice</th>
+                  <th>productDescription</th>
                   <th>Status</th>
                   <th>Actions</th>
                 </tr>
